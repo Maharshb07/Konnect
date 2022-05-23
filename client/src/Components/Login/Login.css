@@ -1,0 +1,73 @@
+.loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.title {
+    margin-top: 20px !important;
+    font-size: 18px !important;
+    margin-bottom: 20px !important;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    min-width: 200px;
+    height: auto;
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    border-radius: 10px;
+    background-color: #EBE8E0;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.inputField {
+    height: 40px;
+    width: 84%;
+    margin-bottom: 17px;
+    padding-left: 18px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.roomBtn {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #D01110;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .cardContainer {
+        /* width: 400px; */
+        min-width: 200px;
+    }
+
+    .inputField {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .cardContainer {
+        width: 400px;
+    }
+}

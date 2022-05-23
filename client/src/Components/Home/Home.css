@@ -1,0 +1,113 @@
+.homeContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.brandContainer {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.brandWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    height: 80%;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.brandName {
+    font-size: 90px;
+    margin: 0px;
+}
+
+.subtitle {
+    color: rgba(0, 0, 0, 0.6);
+    font-style: italic;
+    margin: -4px;
+    font-size: 18px;
+    align-self: flex-end;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .homeContainer {
+        flex-direction: column;
+    }
+
+    .divider {
+        width: 90%;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .login {
+        order: 1;
+    }
+
+    .divider {
+        order: 2;
+    }
+
+    .brandContainer {
+        order: 3;
+    }
+
+    .brandName {
+        font-size: 70px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .login {
+        padding: 35px;
+    }
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .homeContainer {
+        padding: 20px;
+    }
+
+    .brandName {
+        font-size: 70px;
+    }
+
+    .divider {
+        height: 80%;
+        width: 2px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .login {
+        padding: 35px;
+    }
+}
