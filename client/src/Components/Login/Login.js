@@ -3,10 +3,6 @@ import { Typography } from '@mui/material';
 import './Login.css';
 
 function Login({ socket, setisJoined, formData, setformData }) {
-    // const [formData, setformData] = useState({
-    //     username: '',
-    //     roomid: ''
-    // });
 
     const handleClick = () => {
 
@@ -25,9 +21,6 @@ function Login({ socket, setisJoined, formData, setformData }) {
                 <button className='roomBtn' onClick={handleClick}>Join Room</button>
 
             </div>
-
-
-
         </div >
     )
 }
