@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
-import { Paper, Typography, Card, CardContent } from '@mui/material';
+import React from 'react';
+import { Typography } from '@mui/material';
 import './Login.css';
 
-function Login() {
-    const [formData, setformData] = useState({
-        username: '',
-        roomid: ''
-    });
+function Login({ socket, setisJoined, formData, setformData }) {
+    // const [formData, setformData] = useState({
+    //     username: '',
+    //     roomid: ''
+    // });
 
     const handleClick = () => {
-        alert('CLicked !!')
+
+        socket.emit('joinRoom', formData)
+        setisJoined(true)
+
     }
     return (
         <div className='loginContainer'>
